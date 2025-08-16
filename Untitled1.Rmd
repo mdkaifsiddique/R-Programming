@@ -1,0 +1,82 @@
+---
+title: "R-Programming"
+author: "MD KAIF"
+date: "2025-08-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+R-Programming
+
+```{R}
+x=c(2,3,4,5)
+y=c(6,8,9,5)
+
+df=data.frame(x,y)
+df
+
+```
+
+```{R}
+x=c(1,2,3,4)
+
+matrix(x,nrow=2,ncol=2)
+m1=matrix(x)
+dim=m1
+
+
+dimnames(m1)=list(c("A","B"),c("C","D"))
+m1
+
+```
+
+x=c(1,2,6,7,3,4,5,9,10,11,12)
+x
+
+x2=c("apple","banana","guava","cherry")
+x2
+
+x3=c(TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE)
+
+x4=seq(0,1,length.out=54)
+x4
+
+x4.1=seq(100,50,by=-5)
+x4.1
+
+x5=c(1,2,3,4,5)
+rep(x5,each=2)
+
+
+x6=c("A","B","c")
+x6
+rep(x6,c(2,3,4))
+#or
+rep(c("A","B","C"),times=c(2,3,4))
+#for repeat
+rep(c(1,2,3),c(2,6,7))
+
+x7=rep(c(1,2,3),3)
+

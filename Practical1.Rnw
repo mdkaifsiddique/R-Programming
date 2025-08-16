@@ -1,0 +1,54 @@
+\documentclass{article}
+\author{MD KAIF SIDDIQUE (23STBSA822)}
+\title{Practical.1}
+\date{14 Aug 2025}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+Q.1 Create a numeric vector containing numbers 1,2,6,7,3,4,5,9,10
+<<>>=
+x=c(1,2,6,7,3,4,5,9,10,11,12)
+x
+@
+
+Q.2 Create a character vector containing the element “Apple”,”Banana”,”Cherry,”Guava”.
+<<>>=
+x2=c("apple","banana","guava","cherry")
+x2
+@
+Q.3 Create a logical vector of length 7,where the first four elements are TRUE   and last three are FALSE.
+<<>>=
+x3=c(TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE)
+x3
+@
+Q.4 Create a sequence from 0 - 1 of length 54 and also create another sequence of numbers 100 to 50 decreasing by 5.
+<<>>=
+x4=seq(0,1,length.out=54)
+x4
+
+x4.1=seq(100,50,by=-5)
+x4.1
+@
+Q.5[a].Create a vector that repeat elements 1,2,3,4\&5 in the pattern and the pattern (1,1,2,2,3,3,4,4,5,5) using rep function.
+
+<<>>=
+x5=c(1,2,3,4,5)
+rep(x5,each=2)
+@
+[b]. Generate a vector that’s repeats an elements of c(“”A,”B”,”C”) but with varying length ,a repeated 2 times b repeated 3 time c 4 times
+<<>>=
+x6=c("A","B","c")
+x6
+rep(x6,c(2,3,4))
+            #or
+rep(c("A","B","C"),times=c(2,3,4))
+        #for repeat
+rep(c(1,2,3),c(2,6,7))
+@
+[c].use rep function to repeat the vector c(1,2,3) three times."
+<<>>=
+x7=rep(c(1,2,3),3)
+x7
+@
+
+\end{document}

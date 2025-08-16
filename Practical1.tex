@@ -1,0 +1,117 @@
+\documentclass{article}
+\author{MD KAIF SIDDIQUE (23STBSA822)}
+\title{Practical.1}
+\date{14 Aug 2025}
+\usepackage{Sweave}
+\begin{document}
+\input{Practical1-concordance}
+\maketitle
+Q.1 Create a numeric vector containing numbers 1,2,6,7,3,4,5,9,10
+\begin{Schunk}
+\begin{Sinput}
+> x=c(1,2,6,7,3,4,5,9,10,11,12)
+> x
+\end{Sinput}
+\begin{Soutput}
+ [1]  1  2  6  7  3  4  5  9 10 11 12
+\end{Soutput}
+\end{Schunk}
+
+Q.2 Create a character vector containing the element “Apple”,”Banana”,”Cherry,”Guava”.
+\begin{Schunk}
+\begin{Sinput}
+> x2=c("apple","banana","guava","cherry")
+> x2
+\end{Sinput}
+\begin{Soutput}
+[1] "apple"  "banana" "guava"  "cherry"
+\end{Soutput}
+\end{Schunk}
+Q.3 Create a logical vector of length 7,where the first four elements are TRUE   and last three are FALSE.
+\begin{Schunk}
+\begin{Sinput}
+> x3=c(TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE)
+> x3
+\end{Sinput}
+\begin{Soutput}
+[1]  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE
+\end{Soutput}
+\end{Schunk}
+Q.4 Create a sequence from 0 - 1 of length 54 and also create another sequence of numbers 100 to 50 decreasing by 5.
+\begin{Schunk}
+\begin{Sinput}
+> x4=seq(0,1,length.out=54)
+> x4
+\end{Sinput}
+\begin{Soutput}
+ [1] 0.00000000 0.01886792 0.03773585 0.05660377 0.07547170 0.09433962
+ [7] 0.11320755 0.13207547 0.15094340 0.16981132 0.18867925 0.20754717
+[13] 0.22641509 0.24528302 0.26415094 0.28301887 0.30188679 0.32075472
+[19] 0.33962264 0.35849057 0.37735849 0.39622642 0.41509434 0.43396226
+[25] 0.45283019 0.47169811 0.49056604 0.50943396 0.52830189 0.54716981
+[31] 0.56603774 0.58490566 0.60377358 0.62264151 0.64150943 0.66037736
+[37] 0.67924528 0.69811321 0.71698113 0.73584906 0.75471698 0.77358491
+[43] 0.79245283 0.81132075 0.83018868 0.84905660 0.86792453 0.88679245
+[49] 0.90566038 0.92452830 0.94339623 0.96226415 0.98113208 1.00000000
+\end{Soutput}
+\begin{Sinput}
+> x4.1=seq(100,50,by=-5)
+> x4.1
+\end{Sinput}
+\begin{Soutput}
+ [1] 100  95  90  85  80  75  70  65  60  55  50
+\end{Soutput}
+\end{Schunk}
+Q.5[a].Create a vector that repeat elements 1,2,3,4\&5 in the pattern and the pattern (1,1,2,2,3,3,4,4,5,5) using rep function.
+
+\begin{Schunk}
+\begin{Sinput}
+> x5=c(1,2,3,4,5)
+> rep(x5,each=2)
+\end{Sinput}
+\begin{Soutput}
+ [1] 1 1 2 2 3 3 4 4 5 5
+\end{Soutput}
+\end{Schunk}
+[b]. Generate a vector that’s repeats an elements of c(“”A,”B”,”C”) but with varying length ,a repeated 2 times b repeated 3 time c 4 times
+\begin{Schunk}
+\begin{Sinput}
+> x6=c("A","B","c")
+> x6
+\end{Sinput}
+\begin{Soutput}
+[1] "A" "B" "c"
+\end{Soutput}
+\begin{Sinput}
+> rep(x6,c(2,3,4))
+\end{Sinput}
+\begin{Soutput}
+[1] "A" "A" "B" "B" "B" "c" "c" "c" "c"
+\end{Soutput}
+\begin{Sinput}
+>             #or
+> rep(c("A","B","C"),times=c(2,3,4))
+\end{Sinput}
+\begin{Soutput}
+[1] "A" "A" "B" "B" "B" "C" "C" "C" "C"
+\end{Soutput}
+\begin{Sinput}
+>         #for repeat
+> rep(c(1,2,3),c(2,6,7))
+\end{Sinput}
+\begin{Soutput}
+ [1] 1 1 2 2 2 2 2 2 3 3 3 3 3 3 3
+\end{Soutput}
+\end{Schunk}
+[c].use rep function to repeat the vector c(1,2,3) three times."
+\begin{Schunk}
+\begin{Sinput}
+> x7=rep(c(1,2,3),3)
+> x7
+\end{Sinput}
+\begin{Soutput}
+[1] 1 2 3 1 2 3 1 2 3
+\end{Soutput}
+\end{Schunk}
+
+\end{document}
